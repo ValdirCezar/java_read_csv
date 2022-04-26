@@ -18,7 +18,6 @@ public class UserService {
     private final UserRepository repository;
     private final FileService fileService;
 
-
     public void createFromCSV(MultipartFile file) {
         Set<Map<String, String>> list = fileService.getListFromCSV(file);
         var listUser = new ArrayList<User>();
